@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Egresados</string>
+    <string name="iniciar">Iniciar sesion</string>
+    <string name="salir">Salir</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="acceder">Acceder</string>
+    <string name="nombres">Nombre Completo</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="guardar">Guardar</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="cerrar">Cerrar Sesion</string>
+    <string name="convocatoria">Convocatoria</string>
+    <string name="ubigeo">Ubigeo</string>
+    <string name="jornada">Tipo Jornada</string>
+    <string name="persona">Persona</string>
+    <string name="categoria">Categoria</string>
+    <string name="fecha_inicio">Fecha de Inicio</string>
+    <string name="fecha_fin">Fecha Final</string>
+    <string name="vacantes">Vacantes</string>
+    <string name="fecha_contratacion">Fecha Contratacion</string>
+    <string name="fecha">Fecha</string>
+    <string name="tipo_contrato">Tipo de Contrato</string>
+    <string name="nombre_cargo">Nombre</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="empleado">Empleado</string>
+    <string name="egresado">Egresado</string>
+    <string name="institucion">Institucion</string>
+    <string name="cargo">Cargo</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="direccion">Dirección</string>
+    <string name="telefono">Telefono</string>
+    <string name="celular">Celular</string>
+    <string name="email">Email</string>
+    <string name="sexo">Sexo</string>
+    <string name="foto">Foto</string>
+    <string name="tipo_doc">Documento</string>
+    <string name="fecha_egresado">Fecha</string>
+    <string name="codigo_universitario">Codigo</string>
+    <string name="fecha_inscripcion">Fecha</string>
+
+</resources>
