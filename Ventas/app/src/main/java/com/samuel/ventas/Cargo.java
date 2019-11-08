@@ -14,7 +14,7 @@ import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 
 public class Cargo extends AppCompatActivity {
-    Button btnnombrecargo;
+    Button btnnombrecargo, btncancelar1;
     EditText edtnombrecargo;
     private String URL = "http://192.168.43.95/egresados";
 
@@ -25,6 +25,14 @@ public class Cargo extends AppCompatActivity {
 
         edtnombrecargo = (EditText)findViewById(R.id.edtnombrecargo);
         btnnombrecargo=(Button)findViewById(R.id.btnnombrecargo);
+        btncancelar1 =(Button)findViewById(R.id.btncancelar1);
+
+        btncancelar1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         btnnombrecargo.setOnClickListener(new View.OnClickListener() {
             @Override

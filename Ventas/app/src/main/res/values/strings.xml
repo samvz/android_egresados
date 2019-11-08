@@ -39,5 +39,7 @@
     <string name="fecha_egresado">Fecha</string>
     <string name="codigo_universitario">Codigo</string>
     <string name="fecha_inscripcion">Fecha</string>
-
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="registrarse">Registrarse</string>
 </resources>

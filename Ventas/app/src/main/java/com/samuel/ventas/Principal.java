@@ -2,39 +2,67 @@ package com.samuel.ventas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.TargetApi;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Principal extends AppCompatActivity {
-    Button btncerrar, btnnuevo, btnguardar;
+    Button btncerrar, btnnuevo, btnguardar, btncerrarusuarios;
     EditText edtuser, edtpass, edtnombres;
-    private String URL = "http://192.168.137.12/egresados";
+    ListView lsusuarios;
+    private String URL = "http://172.24.6.39/bdventas";
+    AdaptadorUsuarios adaptadorUsuarios;
+    List<Usuarios> lista;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-        btncerrar=(Button)findViewById(R.id.btncerrar);
+       // btncerrar=(Button)findViewById(R.id.btncerrar);
         btnnuevo=(Button)findViewById(R.id.btnnuevo);
         btnguardar=(Button)findViewById(R.id.btnguardar);
         edtuser=(EditText)findViewById(R.id.edtuser);
         edtpass=(EditText)findViewById(R.id.edtpass);
         edtnombres=(EditText)findViewById(R.id.edtnombres);
+        btncerrarusuarios=(Button)findViewById(R.id.btncerrarusuarios);
 
-        btncerrar.setOnClickListener(new View.OnClickListener() {
+       /* lsusuarios=(ListView)findViewById(R.id.lsusuarios);
+
+        lista = new ArrayList<Usuarios>();
+        adaptadorUsuarios = new AdaptadorUsuarios(getApplicationContext(),lista);
+        lsusuarios.setAdapter(adaptadorUsuarios);
+        listausuarios();*/
+
+
+
+       btncerrarusuarios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 finish();
             }
         });
 
+        /*Intent intent = new Intent(getApplicationContext(), Principal.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("EXIT", true);
+        startActivity(intent);*/
 
         btnnuevo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,4 +125,31 @@ public class Principal extends AppCompatActivity {
         edtnombres.setText("");
         edtuser.requestFocus();
     }
+
+    /*public void listausuarios(){
+
+        String listar = URL +"/usuarios/mostrar.php";
+        Ion.with(getBaseContext())
+                .load(listar)
+                .asJsonArray()
+                .setCallback(new FutureCallback<JsonArray>() {
+                    @Override
+                    public void onCompleted(Exception e, JsonArray result) {
+                        for(int i=0; i<result.size();i++){
+
+                            JsonObject obj = result.get(i).getAsJsonObject();
+                            Usuarios c = new Usuarios();
+                            c.setId(obj.get("id").getAsInt());
+                            c.setUsuario(obj.get("usuario").getAsString());
+                            c.setPassword(obj.get("password").getAsString());
+                            c.setNombres(obj.get("nombres").getAsString());
+                            c.setEstado(obj.get("estado").getAsInt());
+
+                            lista.add(c);
+
+                        }
+                        adaptadorUsuarios.notifyDataSetChanged();
+                    }
+                });
+    }*/
 }

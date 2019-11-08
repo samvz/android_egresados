@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:padding="1dp"
+            android:textColor="#ff0000"/>
+
+        <TextView
+            android:id="@+id/txtusuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Usuario"
+            android:padding="1dp"
+            android:textColor="#0000ff"/>
+
+        <TextView
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:text="Password"
+            android:padding="1dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+        <TextView
+            android:id="@+id/txtnombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0000ff"
+            android:text="Nombres"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:padding="1dp"/>
+
+        <TextView
+            android:id="@+id/txtestado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#0000ff"
+            android:padding="1dp"/>
+
+        <Button
+            android:id="@+id/btneditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/editar"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:padding="3dp"/>
+
+        <Button
+            android:id="@+id/btneliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eliminar"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:padding="3dp"/>
+    </LinearLayout>
+</LinearLayout>

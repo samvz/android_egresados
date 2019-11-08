@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 public class Persona extends AppCompatActivity {
-    Button btnentrar1;
+    Button btnentrar1, btncancelar;
     Spinner spubi, spcar, spdoc;
     EditText edtnombres, edtapellidos, edtdireccion, edttelefono, edtcelular, edtemail, edtsexo, edtfoto;
 
@@ -20,7 +20,7 @@ public class Persona extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_persona);
 
-
+        btncancelar=(Button)findViewById(R.id.btncancelar);
         btnentrar1=(Button)findViewById(R.id.btnentrar1);
         spubi=(Spinner)findViewById(R.id.spubi);
         spcar=(Spinner)findViewById(R.id.spcar);
@@ -33,6 +33,13 @@ public class Persona extends AppCompatActivity {
         edtemail=(EditText)findViewById(R.id.edtemail);
         edtsexo=(EditText)findViewById(R.id.edtsexo);
         edtfoto=(EditText)findViewById(R.id.edtfoto);
+
+        btncancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
 
         btnentrar1.setOnClickListener(new View.OnClickListener() {

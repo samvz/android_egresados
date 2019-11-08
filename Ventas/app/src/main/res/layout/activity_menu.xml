@@ -55,56 +55,77 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="197dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/icon1"
-                    android:layout_marginTop="5dp"/>
+                    android:id="@+id/btnimgentrar1"
+                    android:layout_width="158dp"
+                    android:layout_height="176dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/boton_redondo"
+                    app:srcCompat="@mipmap/icon1" />
 
                 <ImageButton
-                    android:id="@+id/btnimagen4"
-                    android:layout_width="184dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/icon2"
-                    android:padding="10dp"
+                    android:id="@+id/btnimgentrar2"
+                    android:layout_width="142dp"
+                    android:layout_height="169dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    />
+
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/boton_redondo"
+                    android:padding="5dp"
+                    app:srcCompat="@mipmap/icon2" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/btnimgentrar1"
-                    android:layout_width="match_parent"
-                    android:layout_height="151dp"
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnimgentrar3"
+                    android:layout_width="158dp"
+                    android:layout_height="149dp"
+                    android:layout_marginLeft="40dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="40dp"
+
                     app:srcCompat="@mipmap/icon4" />
 
                 <ImageButton
-                    android:id="@+id/btnimagen2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/btnimgentrar4"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/boton_redondo"
                     app:srcCompat="@mipmap/icon3" />
             </LinearLayout>
 
+
         </LinearLayout>
+        <Button
+            android:id="@+id/btncerrarsesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Session"
+            tools:layout_editor_absoluteY="632dp"
+            android:background="@drawable/radio"
+            android:textColor="#F7F6F0"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="40dp"/>
 
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -67,19 +67,27 @@
                 android:orientation="vertical">
 
                 <Spinner
-                    android:id="@+id/spinner9"
+                    android:id="@+id/spegresado1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="20dp" />
 
                 <Spinner
-                    android:id="@+id/spinner11"
+                    android:id="@+id/spconvocatoria1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="20dp"/>
 
                 <EditText
-                    android:id="@+id/editText14"
+                    android:id="@+id/edtpersona1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                     />
+
+                <EditText
+                    android:id="@+id/edtfecha1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -99,13 +107,14 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button9"
+                    android:id="@+id/btninsguardar1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/guardar"
-                    android:background="@color/guinda"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="3dp"/>
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/radio"
+                    android:textColor="#F7F6F0"/>
             </LinearLayout>
 
             <LinearLayout
@@ -114,12 +123,14 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button10"
+                    android:id="@+id/btninscancelar1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/cancelar"
                     android:layout_marginRight="10dp"
-                    android:layout_marginLeft="3dp"/>
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/radio"
+                    android:textColor="#F7F6F0"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

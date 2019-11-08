@@ -64,12 +64,12 @@
                 android:text="@string/guardar" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btncancelar1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/radio"
-                android:text="Button" />
+                android:text="Cancelar" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

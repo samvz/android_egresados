@@ -1,5 +1,5 @@
 <?php
-	include '../conexion.php';
+	require '../conexion.php';
 	$usuario=$_POST['usuario'];
 	$password=$_POST['password'];
 	$nombres=$_POST['nombres'];

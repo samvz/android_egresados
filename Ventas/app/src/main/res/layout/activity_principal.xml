@@ -12,11 +12,19 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/btncerrarusuarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar"
+            android:background="@drawable/radio"
+            android:textColor="#F7F6F0"/>
+
+        <!--<Button
             android:id="@+id/btncerrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cerrar"
-            />
+            />-->
 
     </LinearLayout>
 
@@ -73,7 +81,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="20dp">
 
@@ -82,15 +90,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/nuevo" />
+                    android:text="@string/nuevo"
+                    android:background="@drawable/radio"
+                    android:textColor="#F7F6F0"/>
 
                 <Button
                     android:id="@+id/btnguardar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/guardar" />
+                    android:text="@string/guardar"
+                    android:background="@drawable/radio"
+                    android:textColor="#F7F6F0"/>
+
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lsusuarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
         </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
