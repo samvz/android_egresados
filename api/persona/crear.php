@@ -2,10 +2,13 @@
 	require '../conexion.php';
 	$usuario=$_POST['usuario'];
 	$password=$_POST['password'];
-	$nombres=$_POST['nombres'];
+	$id_perfil=$_POST['id_perfil'];
+	$id_perfil=$_POST['id_persona'];
 
-	$query=$conexion->prepare("INSERT INTO usuarios (usuario, password, nombres) VALUES(?,?,?)");
-	$resultado=$query->execute(array($usuario, $password, $nombres));
+	
+
+	$query=$conexion->prepare("INSERT INTO usuarios (usuario, password) VALUES(?,?)");
+	$resultado=$query->execute(array($usuario, $password));
 
 	if($resultado){
 		$id=$conexion->lastInsertId();
