@@ -1,5 +1,6 @@
 <?php
 	require '../conexion.php';
+	
 	$query = $conexion->prepare("SELECT * FROM persona");
 
 	$query->execute();
