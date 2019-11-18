@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnacceder, btnsalir, btnregistrarse;
     EditText edtusuario, edtpassword;
-    private String URL = "http://172.24.6.39/bdventas";
+    private String BASE_URL_API = "http://192.168.0.127/android_egresados/api/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String usuario = edtusuario.getText().toString();
                 String password = edtpassword.getText().toString();
-                String Login = URL + "/ingresar.php";
+                String Login = BASE_URL_API + "/ingresar.php";
                 if(usuario.isEmpty()){
                     edtusuario.setError("Debe ingresar el usuario");
                 }

@@ -58,7 +58,8 @@
             android:background="@drawable/radio"
             android:padding="10dp"
             android:text="@string/acceder"
-            android:textColor="@color/blanco"/>
+            android:textColor="@color/blanco" />
+
         <Button
             android:id="@+id/btnregistrarse"
             android:layout_width="219dp"
